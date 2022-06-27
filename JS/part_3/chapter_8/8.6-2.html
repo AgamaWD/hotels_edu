@@ -1,0 +1,67 @@
+<!-- Задача Форма + модальное окно -->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      #overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+      }
+
+      #container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+        background: rgb(0, 0, 255, 0.3);
+      }
+
+      #container form {
+        margin: auto;
+        height: 120px;
+        width: 300px;
+        border: 1px solid black;
+        padding: 5px 5px 5px 55px;
+        background: url(https://js.cx/clipart/key.png) 3px 5px white no-repeat;
+      }
+    </style>
+  </head>
+
+  <body style="height:2000px">
+    <p>Текст Текст Текст</p>
+    <button onclick="alert('Эта кнопка не должна работать')">Эта кнопка не работает</button>
+    <p>Текст Текст Текст</p>
+    <div id="overlay">
+      <div id="container">
+      <form>
+        Добро пожаловать!
+        <table>
+          <tr>
+            <td>Логин</td>
+            <td>
+              <input>
+            </td>
+          </tr>
+          <tr>
+            <td>Пароль</td>
+            <td>
+              <input>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Войти">
+            </td>
+          </tr>
+        </table>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>

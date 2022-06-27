@@ -1,0 +1,35 @@
+/* Задача Выберите элементы селектором */
+
+input[type="checkbox"]
+
+input[type="checkbox"]:not(:checked)
+
+#message, [id^="message"]
+
+[id^="message-"]
+
+a[href$=".zip"]
+
+[data-action~="delete"]
+
+[data-action]:not([data-action~="delete"])
+
+#messages li:nth-child(2n)
+
+h3#widget-title + *
+
+h3#widget-title ~ a
+
+#messages li:last-child a
+
+/* Задача Отступ между элементами, размер одна строка */
+
+li:not(:last-child) {
+    margin-bottom: 1.5em;
+}
+
+/* Задача Отступ между парами, размером со строку */
+
+li:nth-child(even):not(:last-child) {
+    margin-bottom: 1.5em;
+}

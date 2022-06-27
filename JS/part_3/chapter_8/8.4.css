@@ -1,0 +1,73 @@
+/* Задача Дерево с многострочными узлами */
+
+li {
+  list-style: none;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+  }
+
+.open .icon {
+    cursor: pointer;
+    background: url(https://js.cx/sprite-tree/minus.gif);
+}
+
+.closed .icon {
+    cursor: pointer;
+    background: url(https://js.cx/sprite-tree/plus.gif);
+}
+
+.leaf .icon {
+    cursor: text;
+    background: url(https://js.cx/sprite-tree/article.gif);
+}
+
+.text {
+    margin: 6px 0 6px 16px;
+}
+
+/* Задача Постраничная навигация (CSS) */
+
+.nav {
+    height: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.nav .left {
+    float: left;
+    cursor: pointer;
+}
+
+.nav .right {
+    float: right;
+    cursor: pointer;
+}
+
+.nav .pages {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .pages li {
+    display: inline;
+    margin: 0 3px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* Задача Добавить рамку, сохранив ширину */
+
+.right {
+    float:right;
+    width:70%;
+    background: tan;
+    box-sizing: border-box;
+    border-left: 2px solid green;
+    padding-left: 10px;
+}
